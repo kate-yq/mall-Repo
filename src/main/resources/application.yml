@@ -1,0 +1,17 @@
+server:
+  port:8080
+
+spring:
+  jackson:
+    date-format: yyyy-mm-dd HH:mm:ss
+    time-zone: GMT-8
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useSSL=false&serverTimezone=UTC
+    username: mallAdmin
+    password: mallAdmin
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show_sql: true
